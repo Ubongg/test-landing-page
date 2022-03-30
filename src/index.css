@@ -54,13 +54,13 @@ li {
 .sub-links {
   display: flex;
   justify-content: center;
-  margin: 30px 0;
+  margin: 30px 60px;
 }
 .sub-links li {
   margin-left: 20px;
   border: 1px solid black;
   padding: 8px 20px;
-  width: 170px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,23 +80,28 @@ li {
   align-items: center;
   margin: 50px;
 }
-.search-form input {
-  width: 800px;
-  padding: 20px;
-  border: none;
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
   box-shadow: 0px 2px 5px 2px rgba(173, 172, 172, 0.5);
 }
+.search-form input {
+  width: 90%;
+  padding: 20px;
+  border: none;
+}
 .search-form button {
-  padding: 20px 40px;
+  padding: 20px 50px;
   background: var(--primary-color);
   color: #ffff;
   border: none;
-  box-shadow: 0px 2px 5px 2px rgba(173, 172, 172, 0.5);
 }
 .section {
   margin: -80px 0 50px 0;
   background: url("/public/images/banner.png");
-  width: 90%;
+  width: 94.5%;
   height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -114,7 +119,7 @@ li {
   justify-content: center;
   position: absolute;
   top: 45%;
-  left: 8%;
+  left: 6%;
 }
 .swipe-right {
   background: #ffff;
@@ -170,17 +175,19 @@ li {
   margin-bottom: 20px;
 }
 .experiences-boxes {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
   position: relative;
-  width: 1050px;
+  max-width: 100%;
 }
 .experience-box {
-  margin-right: 15px;
-  width: 250px;
+  /* margin-right: 15px; */
+  width: 100%;
 }
 .experience-box .img-bx {
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  height: 200px;
 }
 .experience-box .img-bx img {
   width: 100%;
@@ -189,8 +196,8 @@ li {
 .experiences-left {
   background: #ffff;
   border: 1px solid black;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -202,8 +209,8 @@ li {
 .experiences-right {
   background: #ffff;
   border: 1px solid black;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -237,15 +244,18 @@ li {
   margin: 0 80px 30px 0;
 }
 .offers-nav ul {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
   border: 1px solid var(--primary-color);
   padding: 5px;
 }
 .offers-nav ul li {
   cursor: pointer;
   padding: 8px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   transition: var(--main-transition);
+  text-align: center;
 }
 .offers-nav ul li:hover {
   background: var(--primary-color);
@@ -276,12 +286,14 @@ li {
   border: 1px solid var(--primary-color);
 }
 .offers-boxes {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  overflow-x: hidden;
 }
 .offers-box {
-  width: 400px;
+  width: 350px;
   height: 250px;
-  margin-right: 15px;
+  margin-right: 20px;
   position: relative;
 }
 .a {
@@ -307,6 +319,7 @@ li {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-right: 0;
 }
 .offers-box .text-bx {
   position: absolute;
@@ -318,7 +331,7 @@ li {
   font-size: 10px;
 }
 .merchant {
-  margin: 120px;
+  margin: 100px 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -421,4 +434,59 @@ li {
   border: 1px solid #ffff;
   color: white;
   padding: 15px 20px;
+}
+.loans {
+  margin: 50px;
+}
+.loans .text-bx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.loans .text-bx h1 {
+  width: 800px;
+  font-size: 40px;
+}
+.loans .text-bx p {
+  margin: 20px;
+  width: 800px;
+  font-size: 15px;
+}
+.loans .text-bx button {
+  background: rgb(74, 141, 195);
+  color: #ffff;
+  padding: 15px 20px;
+  border: none;
+}
+.loans-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loans-box {
+  border: 1px solid black;
+  padding: 10px;
+  width: 250px;
+  margin-right: 20px;
+}
+.loans-box p {
+  margin: 10px 0;
+}
+.loans-m {
+  margin: 30px 0 10px 0;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgb(202, 200, 200);
+  margin-right: 8px;
 }
