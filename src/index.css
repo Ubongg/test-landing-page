@@ -1,13 +1,424 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  --primary-color: rgb(100, 206, 174);
+  --main-grey: rgb(104, 104, 104);
+  --main-transition: 0.3s linear all;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+body {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
+}
+.logo {
+  margin-left: 100px;
+}
+.show-menu {
+  display: none;
+}
+.links {
+  display: flex;
+  padding-top: 15px;
+}
+.links li {
+  margin-left: 30px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.links .sign {
+  display: flex;
+  margin-left: 40px;
+}
+.login {
+  color: var(--primary-color);
+}
+.started {
+  background: var(--primary-color);
+  color: #ffff;
+  padding: 15px 20px;
+  margin-top: -15px;
+}
+.sub-links {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.sub-links li {
+  margin-left: 20px;
+  border: 1px solid black;
+  padding: 8px 20px;
+  width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+.sub-links li:hover {
+  background: var(--primary-color);
+  color: #ffff;
+  border: 1px solid var(--primary-color);
+}
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+.search-form input {
+  width: 800px;
+  padding: 20px;
+  border: none;
+  box-shadow: 0px 2px 5px 2px rgba(173, 172, 172, 0.5);
+}
+.search-form button {
+  padding: 20px 40px;
+  background: var(--primary-color);
+  color: #ffff;
+  border: none;
+  box-shadow: 0px 2px 5px 2px rgba(173, 172, 172, 0.5);
+}
+.section {
+  margin: -80px 0 50px 0;
+  background: url("/public/images/banner.png");
+  width: 90%;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: -1;
+}
+.swipe-left {
+  background: #ffff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 45%;
+  left: 8%;
+}
+.swipe-right {
+  background: #ffff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 45%;
+  right: -2%;
+  box-shadow: 2px 0px 2px 2px rgb(240, 240, 240);
+}
+.section-text {
+  background: #ffff;
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  bottom: 10%;
+  left: 14%;
+  padding: 20px;
+}
+.section-text p {
+  font-size: 13px;
+  margin-bottom: 7px;
+}
+.section-text h4 {
+  margin-bottom: 3px;
+  font-size: 20px;
+}
+.partners {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.partners .head h4 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+.partners-list {
+  display: flex;
+}
+.partners-list p {
+  margin-left: 30px;
+}
+.experiences {
+  margin: 50px 80px;
+}
+.experiences .head {
+  margin-bottom: 20px;
+}
+.experiences-boxes {
+  display: flex;
+  position: relative;
+  width: 1050px;
+}
+.experience-box {
+  margin-right: 15px;
+  width: 250px;
+}
+.experience-box .img-bx {
+  width: 250px;
+  height: 250px;
+}
+.experience-box .img-bx img {
+  width: 100%;
+  height: 100%;
+}
+.experiences-left {
+  background: #ffff;
+  border: 1px solid black;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 35%;
+  left: -2%;
+}
+.experiences-right {
+  background: #ffff;
+  border: 1px solid black;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 35%;
+  right: -2%;
+}
+.experience-box .text-bx {
+  margin-top: 10px;
+}
+.experience-box .text-bx p {
+  margin-top: 5px;
+  font-size: 12px;
+}
+.offers {
+  background: rgb(229, 255, 248);
+  padding: 50px 0 50px 80px;
+}
+.offers-text {
+  margin-bottom: 30px;
+  width: 600px;
+}
+.offers-text h3 {
+  margin-bottom: 6px;
+}
+.offers-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 80px 30px 0;
+}
+.offers-nav ul {
+  display: flex;
+  border: 1px solid var(--primary-color);
+  padding: 5px;
+}
+.offers-nav ul li {
+  cursor: pointer;
+  padding: 8px;
+  margin-right: 20px;
+  transition: var(--main-transition);
+}
+.offers-nav ul li:hover {
+  background: var(--primary-color);
+}
+.buttons {
+  display: flex;
+}
+.offers-left {
+  background: rgb(213, 228, 226);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  margin-right: 8px;
+}
+.offers-right {
+  background: rgb(213, 228, 226);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.offers-boxes {
+  display: flex;
+}
+.offers-box {
+  width: 400px;
+  height: 250px;
+  margin-right: 15px;
+  position: relative;
+}
+.a {
+  background: url("/public/images/offers1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.b {
+  background: url("/public/images/offers2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.c {
+  background: url("/public/images/offers3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.d {
+  background: url("/public/images/offers4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.offers-box .text-bx {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  color: #ffff;
+}
+.offers-box .text-bx p {
+  font-size: 10px;
+}
+.merchant {
+  margin: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.merchant .text-bx {
+  width: 50%;
+}
+.merchant .text-bx p {
+  margin: 10px 0 20px;
+}
+.merchant .text-bx ul li {
+  list-style: disc;
+  margin-left: 22px;
+  margin-bottom: 5px;
+}
+.merchant .text-bx button {
+  margin-top: 20px;
+  background: var(--primary-color);
+  color: #ffff;
+  padding: 15px 20px;
+  border: none;
+}
+.img-stack {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+.one,
+.two,
+.three,
+.four {
+  grid-column: 1;
+  grid-row: 1;
+}
+.three {
+  transform: rotate(4deg);
+}
+.two {
+  transform: rotate(2deg);
+}
+.one {
+  transform: rotate(-4deg);
+}
+.four {
+  transform: rotate(-2deg);
+}
+.merchant-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: -30px;
+}
+.merchant-text {
+  margin-top: 20px;
+}
+.investments {
+  padding: 50px 0 50px 80px;
+  background: var(--primary-color);
+}
+.investments .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffff;
+  padding-right: 80px;
+}
+.investments .head .text-bx {
+  width: 500px;
+}
+.investments .head .text-bx p {
+  margin: 10px 0 20px 0;
+}
+.investments .head ul li {
+  background: transparent;
+  border: 1px solid #ffff;
+  padding: 15px 20px;
+}
+.investmentsboxes {
+  display: flex;
+  margin-top: 10px;
+  overflow-x: hidden;
+}
+.investmentsbox {
+  background: #ffff;
+  padding: 8px;
+  margin-right: 15px;
+}
+.investmentsbox .text-bx p {
+  margin: 10px 0;
+}
+.investments .button {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.investments .button button {
+  background: transparent;
+  border: 1px solid #ffff;
+  color: white;
+  padding: 15px 20px;
 }
