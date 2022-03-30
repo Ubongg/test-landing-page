@@ -2,6 +2,7 @@ html {
   --primary-color: rgb(100, 206, 174);
   --main-grey: rgb(104, 104, 104);
   --main-transition: 0.3s linear all;
+  --main-blue: rgb(74, 141, 195);
 }
 body {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -456,7 +457,7 @@ li {
   font-size: 15px;
 }
 .loans .text-bx button {
-  background: rgb(74, 141, 195);
+  background: var(--main-blue);
   color: #ffff;
   padding: 15px 20px;
   border: none;
@@ -469,7 +470,7 @@ li {
 .loans-box {
   border: 1px solid black;
   padding: 10px;
-  width: 250px;
+  width: 320px;
   margin-right: 20px;
 }
 .loans-box p {
@@ -487,6 +488,66 @@ li {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: rgb(202, 200, 200);
+  background: rgb(221, 216, 216);
   margin-right: 8px;
+}
+.shortlets {
+  background: url("/public/images/shortlets.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 83vh;
+  overflow-x: hidden;
+  position: relative;
+}
+.shortlets .text-bx {
+  color: #ffff;
+  width: 500px;
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+}
+.shortlets .text-bx h2 {
+  font-size: 40px;
+  margin: 20px 0;
+  width: 400px;
+}
+.shortlets .text-bx p {
+  margin-bottom: 20px;
+}
+.shortlets .text-bx button {
+  background: var(--main-blue);
+  color: #ffff;
+  padding: 15px 20px;
+  border: none;
+  margin-bottom: 10px;
+}
+.shortlets .text-bx li {
+  border: 1px solid #fff;
+  display: inline-block;
+  padding: 10px;
+  font-size: 10px;
+}
+.shortlets-boxes {
+  display: flex;
+  justify-content: flex-end;
+  overflow-x: hidden;
+  position: absolute;
+  top: 30%;
+  right: -12%;
+}
+.shortlets-box {
+  background: #ffff;
+  padding: 8px;
+  width: 35%;
+  margin-right: 15px;
+}
+.shortlets-box .img-bx {
+  width: 100%;
+}
+.shortlets-box .img-bx img {
+  width: 100%;
+}
+.shortlets-boxes .box-text-bx {
+  color: black;
 }

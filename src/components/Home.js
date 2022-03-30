@@ -10,6 +10,7 @@ import SearchBar from "./SearchBar";
 import Section from "./Section";
 import Shortlets from "./Shortlets";
 import SubNav from "./SubNav";
+import WaitingList from "./WaitingList";
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
       <Investments />
       <Loans />
       <Shortlets />
+      <WaitingList />
     </div>
   );
 };
