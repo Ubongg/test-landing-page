@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaAngleDown } from "react-icons/fa";
+import { FaAngleUp } from "react-icons/fa";
+import DropDown from "./DropDown";
 
 const SubNav = () => {
+  const [dropDown, setDropDown] = useState(false);
+
   return (
     <div className="sub-nav">
       <ul className="sub-links">
@@ -10,12 +14,11 @@ const SubNav = () => {
         <li>short lists</li>
         <li>spa</li>
         <li>real estate investments</li>
-        <li>
+        <li onClick={() => setDropDown(!dropDown)}>
           financial services{" "}
-          <span>
-            <FaAngleDown />
-          </span>
+          <span>{dropDown ? <FaAngleUp /> : <FaAngleDown />}</span>
         </li>
+        {dropDown && <DropDown />}
       </ul>
     </div>
   );

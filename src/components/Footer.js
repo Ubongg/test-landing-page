@@ -1,4 +1,11 @@
 import React from "react";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaTwitterSquare } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaCcMastercard } from "react-icons/fa";
+import { FaCcVisa } from "react-icons/fa";
+import { FaCcAmex } from "react-icons/fa";
+import { FaCcPaypal } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -43,9 +50,15 @@ const Footer = () => {
             <h4>Follow us</h4>
           </div>
           <div className="social-links">
-            <span>.</span>
-            <span>.</span>
-            <span>.</span>
+            <span>
+              <FaFacebookSquare className="social" />
+            </span>
+            <span>
+              <FaTwitterSquare className="social" />
+            </span>
+            <span>
+              <FaInstagramSquare className="social" />
+            </span>
           </div>
         </div>
         <div className="bottom">
@@ -53,9 +66,18 @@ const Footer = () => {
             <h4>Payment methods</h4>
           </div>
           <div className="social-links">
-            <span>.</span>
-            <span>.</span>
-            <span>.</span>
+            <span>
+              <FaCcMastercard className="cards" />
+            </span>
+            <span>
+              <FaCcVisa className="cards" />
+            </span>
+            <span>
+              <FaCcAmex className="cards" />
+            </span>
+            <span>
+              <FaCcPaypal className="cards" />
+            </span>
           </div>
         </div>
       </div>

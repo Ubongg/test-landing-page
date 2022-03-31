@@ -1,4 +1,5 @@
 import React from "react";
+import { FaAngleDown } from "react-icons/fa";
 
 const Investments = () => {
   return (
@@ -12,7 +13,12 @@ const Investments = () => {
           </p>
         </div>
         <ul>
-          <li>Enter Location</li>
+          <li>
+            Enter Location{" "}
+            <span>
+              <FaAngleDown />
+            </span>
+          </li>
         </ul>
       </div>
       <div className="investmentsboxes">

@@ -4,6 +4,7 @@ html {
   --main-transition: 0.3s linear all;
   --main-blue: rgb(74, 141, 195);
   --spacing: 1.3px;
+  --small-spacing: 1px;
   --line-height: 20px;
 }
 body {
@@ -23,6 +24,12 @@ li {
 button{
   cursor: pointer;
   letter-spacing: var(--spacing);
+  font-size: 16px;
+}
+p{
+    letter-spacing: var(--small-spacingspacing);
+    font-size: 20px;
+    line-height: var(--line-height);
 }
 .nav {
   display: flex;
@@ -44,6 +51,8 @@ button{
   margin-left: 30px;
   text-transform: capitalize;
   cursor: pointer;
+  font-family: 'Nunito Sans';
+  /* font-weight: 600; */
 }
 .links .sign {
   display: flex;
@@ -51,22 +60,28 @@ button{
 }
 .login {
   color: var(--primary-color);
+    font-family: 'Nunito Sans';
+    /* font-weight: 700; */
 }
 .started {
   background: var(--primary-color);
   color: #ffff;
   padding: 15px 20px;
   margin-top: -15px;
+  font-family: 'Nunito Sans';
+  /* font-weight: 600; */
+  font-size: 16px;
 }
 .sub-links {
   display: flex;
   justify-content: center;
   margin: 30px 60px;
+  position: relative;
 }
 .sub-links li {
   margin-left: 20px;
   border: 1px solid black;
-  padding: 8px 20px;
+  padding: 6px 20px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -75,11 +90,41 @@ button{
   text-transform: capitalize;
   transition: var(--main-transition);
   cursor: pointer;
+  font-family: 'Nunito Sans';
+  font-size: 20px;
 }
 .sub-links li:hover {
   background: var(--primary-color);
   color: #ffff;
   border: 1px solid var(--primary-color);
+}
+.drop-links{
+  position: absolute;
+  right: 2.2%;
+  bottom: -200%;
+  background: #fff;
+    margin: 0;
+    padding: 5px 45px 5px 10px;
+    box-shadow: -4px 4px 3px 1px rgba(173, 172, 172, 0.3);
+}
+.drop-links li{
+margin: 10px 10px 15px;
+border: none;
+width: 100%;
+  padding: 0;
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+text-align: start;
+text-transform: capitalize;
+cursor: pointer;
+font-family: 'Nunito Sans';
+font-size: 13px;
+}
+.drop-links li:hover{
+  background: none;
+  color: black;
+  border: none;
 }
 .search-bar {
   display: flex;
@@ -99,11 +144,16 @@ button{
   padding: 20px;
   border: none;
 }
+.search-form input::placeholder{
+  font-family: 'Nunito';
+}
 .search-form button {
-  padding: 20px 50px;
+  padding: 17px 50px;
   background: var(--primary-color);
   color: #ffff;
   border: none;
+  font-family: 'Nunito';
+  font-size: 20px;
 }
 .section {
   margin: -80px 0 50px 0;
@@ -144,19 +194,21 @@ button{
 .section-text {
   background: #ffff;
   width: 20%;
-  height: 20%;
+  height: 25%;
   position: absolute;
   bottom: 10%;
   left: 14%;
   padding: 20px;
 }
 .section-text p {
-  font-size: 13px;
+  font-size: 12px;
   margin-bottom: 7px;
+  font-family: 'Nunito Sans';
 }
 .section-text h4 {
   margin-bottom: 3px;
-  font-size: 20px;
+  font-size: 30px;
+  font-family: 'Recoleta';
 }
 .partners {
   display: flex;
@@ -169,6 +221,7 @@ button{
   color: var(--primary-color);
   margin-bottom: 20px;
   font-size: 20px;
+  font-family: 'Nunito Sans';
 }
 .partners-list {
   display: flex;
@@ -185,7 +238,8 @@ button{
   margin-bottom: 20px;
 }
 .experiences .head h3{
-  font-size: 25px;
+  font-size: 30px;
+  font-family: 'Recoleta';
 }
 .experiences-boxes {
   display: grid;
@@ -236,11 +290,13 @@ button{
   margin-top: 10px;
 }
 .experience-box .text-bx h5{
-  font-size: 20px;
+  font-size: 25px;
+  font-family: 'Nunito Sans';
 }
 .experience-box .text-bx p {
   margin-top: 5px;
-  font-size: 12px;
+  font-size: 16px;
+  font-family: 'Nunito Sans';
 }
 .offers {
   background: rgb(229, 255, 248);
@@ -252,7 +308,11 @@ button{
 }
 .offers-text h3 {
   margin-bottom: 10px;
-    font-size: 30px;
+    font-size: 38px;
+    font-family: 'Recoleta Alt';
+}
+.offers-text p{
+  font-family: 'Nunito Sans';
 }
 .offers-nav {
   display: flex;
@@ -274,6 +334,8 @@ button{
   transition: var(--main-transition);
   text-align: center;
   color: var(--primary-color);
+  font-family: 'Nunito Sans';
+  font-size: 14px;
 }
 .offers-nav ul li:hover {
   background: var(--primary-color);
@@ -358,11 +420,13 @@ button{
   color: #ffff;
 }
 .offers-box .text-bx h4{
-  font-size: 15px;
+  font-size: 22px;
   margin-bottom: 5px;
+  font-family: 'Recoleta Alt';
 }
 .offers-box .text-bx p {
-  font-size: 10px;
+  font-size: 13px;
+  font-family: 'Nunito Sans';
 }
 .merchant {
   margin: 100px 200px;
@@ -374,15 +438,19 @@ button{
   width: 50%;
 }
 .merchant .text-bx h3{
-  font-size: 30px;
+  font-size: 38px;
+  font-family: 'Recoleta';
 }
 .merchant .text-bx p {
   margin: 10px 0 20px;
+  font-family: 'Nunito Sans';
 }
 .merchant .text-bx ul li {
   list-style: disc;
   margin-left: 22px;
   margin-bottom: 5px;
+  font-family: 'Nunito Sans';
+  font-size: 20px;
 }
 .merchant .text-bx button {
   margin-top: 20px;
@@ -390,6 +458,7 @@ button{
   color: #ffff;
   padding: 15px 20px;
   border: none;
+  font-family: 'Nunito Sans';
 }
 .img-stack {
   display: grid;
@@ -429,9 +498,12 @@ button{
 .merchant-text h4{
   font-size: 20px;
   margin-bottom: 5px;
+  font-family: 'Nunito Sans';
 }
 .merchant-text p{
-  margin-bottom: 3px;
+  /* margin-bottom: 5px; */
+  font-family: 'Nunito Sans';
+  font-size: 13px;
 }
 .investments {
   padding: 50px 0 50px 80px;
@@ -448,15 +520,19 @@ button{
   width: 500px;
 }
 .investments .head .text-bx h3{
-  font-size: 30px;
+  font-size: 38px;
+  font-family: 'Recoleta';
 }
 .investments .head .text-bx p {
   margin: 10px 0 20px 0;
+  font-family: 'Nunito Sans';
 }
 .investments .head ul li {
   background: transparent;
   border: 1px solid #ffff;
   padding: 15px 20px;
+  font-family: 'Nunito Sans';
+  font-size: 16px;
 }
 .investmentsboxes {
   display: grid;
@@ -479,8 +555,14 @@ button{
     width: 100%;
     height: 100%;
 }
+.investmentsbox .text-bx h4{
+  font-family: 'Recoleta Alt';
+  font-size: 24px;
+}
 .investmentsbox .text-bx p {
   margin: 10px 0;
+  font-family: 'Nunito Sans';
+  font-size: 13px;
 }
 .investments .button {
   margin-top: 30px;
@@ -493,6 +575,7 @@ button{
   border: 1px solid #ffff;
   color: white;
   padding: 15px 20px;
+  font-family: 'Nunito Sans';
 }
 .loans {
   margin: 50px;
@@ -506,19 +589,21 @@ button{
   margin-bottom: 40px;
 }
 .loans .text-bx h1 {
-  width: 800px;
-  font-size: 45px;
+  width: 850px;
+  font-size: 67px;
+  font-family: 'Recoleta Alt';
 }
 .loans .text-bx p {
   margin: 20px;
-  width: 800px;
-  font-size: 15px;
+  width: 700px;
+  font-family: 'Nunito Sans';
 }
 .loans .text-bx button {
   background: var(--main-blue);
   color: #ffff;
   padding: 15px 20px;
   border: none;
+  font-family: 'Nunito Sans';
 }
 .loans-boxes {
   display: flex;
@@ -533,9 +618,17 @@ button{
 }
 .loans-box p {
   margin: 10px 0;
+  font-family: 'Nunito Sans';
+  font-size: 16px;
+}
+.loans-box h3{
+  font-family: 'Recoleta Alt';
+    font-size: 24px;
 }
 .loans-m {
   margin: 30px 0 10px 0;
+  font-family: 'Nunito Sans';
+  font-size: 12px;
 }
 .icons {
   display: flex;
@@ -546,15 +639,18 @@ button{
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: rgb(221, 216, 216);
+  background: #EBF5F1;;
   margin-right: 9px;
+}
+.icon-text{
+  font-size: 12px;
 }
 .shortlets {
   background: url("/public/images/shortlets.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 83vh;
+  height: 100vh;
   overflow-x: hidden;
   position: relative;
 }
@@ -566,12 +662,14 @@ button{
   left: 10%;
 }
 .shortlets .text-bx h2 {
-  font-size: 45px;
+  font-size: 67px;
   margin: 20px 0;
-  width: 450px;
+  width: 550px;
+  font-family: 'Recoleta';
 }
 .shortlets .text-bx p {
   margin-bottom: 20px;
+  font-family: 'Nunito Sans';
 }
 .shortlets .text-bx button {
   background: var(--main-blue);
@@ -579,12 +677,14 @@ button{
   padding: 15px 20px;
   border: none;
   margin-bottom: 10px;
+  font-family: 'Nunito Sans';
 }
 .shortlets .text-bx li {
   border: 1px solid #fff;
   display: inline-block;
   padding: 10px;
-  font-size: 10px;
+  font-size: 16px;
+  font-family: 'Nunito Sans';
 }
 .shortlets-boxes {
   display: flex;
@@ -597,7 +697,7 @@ button{
 .shortlets-box {
   background: #ffff;
   padding: 8px;
-  width: 33%;
+  width: 40%;
   margin-right: 15px;
 }
 .shortlets-box .img-bx {
@@ -611,10 +711,12 @@ button{
 }
 .shortlets-boxes .box-text-bx p{
   font-size: 12px;
-  margin-bottom: 3px;
+  margin: 5px 0;
+  font-family: 'Nunito Sans';
 }
 .shortlets-boxes .box-text-bx h4{
-  font-size: 20px;
+  font-size: 24px;
+  font-family: 'Recoleta Alt';
 }
 .waiting-list{
   display: flex;
@@ -625,16 +727,21 @@ button{
   text-align: center;
 }
 .waiting-list h1{
-  font-size: 45px;
+  font-size: 67px;
+  font-family: 'Recoleta Alt';
 }
 .waiting-list p{
   width: 600px;
-  margin: 20px;
+  margin: 20px 0 40px;
+  font-family: 'Nunito Sans';
 }
 .waiting-list input{
-  width: 500px;
+  width: 400px;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+.waiting-list input::placeholder{
+    font-family: 'Nunito Sans';
 }
 .waiting-list button{
   background: var(--primary-color);
@@ -642,6 +749,7 @@ button{
   padding: 15px 20px;
   border: none;
   margin-bottom: 10px;
+  font-family: 'Nunito Sans';
 }
 .footer{
   background: #071F2C;
@@ -653,9 +761,13 @@ button{
   grid-template-columns: repeat(4, 1fr);
   padding: 50px 80px;
   grid-gap: 80px;
+  font-family: 'Nunito Sans';
 }
 .footer h4{
-  font-size: 20px;
+  font-size: 16px;
+}
+.footer li{
+  font-size: 14px;
 }
 .col-1, .col-2, .col-4{
   max-width: 250px;
@@ -665,6 +777,9 @@ button{
 }
 .col-1 .img-bx img{
   filter: invert(100%);
+}
+.col-1 .text-bx p{
+  font-size: 12px;
 }
 .col-2{
   margin-left: 50px;
@@ -680,6 +795,21 @@ button{
 }
 .col-4 .top{
     margin-bottom: 50px;
+}
+.footer .social-links{
+  margin-top: -10px;
+}
+.footer .social-links span{
+  margin-right: 5px;
+}
+.footer .social-links span .social{
+  width: 32px;
+  height: 32px;
+  border-radius: 13px;
+}
+.footer .social-links span .cards{
+  width: 32px;
+  height: 32px;
 }
 .footer-img{
   /* z-index: 1;  */
