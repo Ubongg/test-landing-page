@@ -84,6 +84,10 @@ const Footer = () => {
       <div className="footer-img">
         <img src="/images/footer.png" alt="" />
       </div>
+      <p className="copyright">
+        Citisquare © Copyright 2021 • All rights reserved.
+      </p>
+      <p className="terms">Terms & Conditions • Privacy Policy</p>
     </div>
   );
 };
