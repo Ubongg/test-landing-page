@@ -7,11 +7,11 @@ const Partners = () => {
         <h4>OUR PARTNERS</h4>
       </div>
       <div className="partners-list">
-        <p>partner</p>
-        <p>partner</p>
-        <p>partner</p>
-        <p>partner</p>
-        <p>partner</p>
+        <h4>Flutterwave</h4>
+        <h4>crowdyvest</h4>
+        <h4>Tangerine</h4>
+        <h4>PALTON MORGAN</h4>
+        <h4>sparkle</h4>
       </div>
     </div>
   );

@@ -62,7 +62,10 @@ const Investments = () => {
           <div className="text-bx">
             <p>AKWA IBOM NIGERIA</p>
             <h4>Dakkada Estates</h4>
-            <p>Located in akwa ibom dakkada</p>
+            <p>
+              Located in akwa ibom dakkada estates has friendly environments
+              that attracts investors, also has good ROI values.
+            </p>
           </div>
         </div>
       </div>

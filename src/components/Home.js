@@ -1,5 +1,6 @@
 import React from "react";
 import Experiences from "./Experiences";
+import Footer from "./Footer";
 import Investments from "./Investments";
 import Loans from "./Loans";
 import Merchant from "./Merchant";
@@ -27,6 +28,7 @@ const Home = () => {
       <Loans />
       <Shortlets />
       <WaitingList />
+      <Footer />
     </div>
   );
 };

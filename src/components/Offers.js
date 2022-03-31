@@ -30,18 +30,21 @@ const Offers = () => {
       </div>
       <div className="offers-boxes">
         <div className="offers-box a">
+          <span>30% Off</span>
           <div className="text-bx">
             <h4>Studio Apartment</h4>
             <p>Abuja,Nigeria</p>
           </div>
         </div>
         <div className="offers-box b">
+          <span>30% Off</span>
           <div className="text-bx">
             <h4>Summer in Seychelles</h4>
             <p>Abuja,Nigeria</p>
           </div>
         </div>
         <div className="offers-box c">
+          <span>30% Off</span>
           <div className="text-bx">
             <h4>Fenty Spa</h4>
             <p>Abuja,Nigeria</p>

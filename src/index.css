@@ -3,6 +3,8 @@ html {
   --main-grey: rgb(104, 104, 104);
   --main-transition: 0.3s linear all;
   --main-blue: rgb(74, 141, 195);
+  --spacing: 1.3px;
+  --line-height: 20px;
 }
 body {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -17,6 +19,10 @@ a,
 li {
   text-decoration: none;
   list-style: none;
+}
+button{
+  cursor: pointer;
+  letter-spacing: var(--spacing);
 }
 .nav {
   display: flex;
@@ -162,18 +168,24 @@ li {
 .partners .head h4 {
   color: var(--primary-color);
   margin-bottom: 20px;
+  font-size: 20px;
 }
 .partners-list {
   display: flex;
 }
-.partners-list p {
-  margin-left: 30px;
+.partners-list h4 {
+  margin-left: 50px;
+    font-size: 20px;
+      color: grey;
 }
 .experiences {
   margin: 50px 80px;
 }
 .experiences .head {
   margin-bottom: 20px;
+}
+.experiences .head h3{
+  font-size: 25px;
 }
 .experiences-boxes {
   display: grid;
@@ -205,7 +217,7 @@ li {
   justify-content: center;
   position: absolute;
   top: 35%;
-  left: -2%;
+  left: -1.5%;
 }
 .experiences-right {
   background: #ffff;
@@ -218,10 +230,13 @@ li {
   justify-content: center;
   position: absolute;
   top: 35%;
-  right: -2%;
+  right: -1.5%;
 }
 .experience-box .text-bx {
   margin-top: 10px;
+}
+.experience-box .text-bx h5{
+  font-size: 20px;
 }
 .experience-box .text-bx p {
   margin-top: 5px;
@@ -236,7 +251,8 @@ li {
   width: 600px;
 }
 .offers-text h3 {
-  margin-bottom: 6px;
+  margin-bottom: 10px;
+    font-size: 30px;
 }
 .offers-nav {
   display: flex;
@@ -257,9 +273,11 @@ li {
   /* margin-right: 20px; */
   transition: var(--main-transition);
   text-align: center;
+  color: var(--primary-color);
 }
 .offers-nav ul li:hover {
   background: var(--primary-color);
+  color: #fff;
 }
 .buttons {
   display: flex;
@@ -289,12 +307,12 @@ li {
 .offers-boxes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
   overflow-x: hidden;
 }
 .offers-box {
   width: 350px;
   height: 250px;
-  margin-right: 20px;
   position: relative;
 }
 .a {
@@ -322,11 +340,26 @@ li {
   background-size: cover;
   margin-right: 0;
 }
+.offers-box span{
+  color: #fff;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  background: var(--primary-color);
+  border-radius: 20px;
+  position: absolute;
+  right: 2%;
+  top: 3%;
+  font-size: 12px;
+}
 .offers-box .text-bx {
   position: absolute;
   bottom: 5%;
   left: 5%;
   color: #ffff;
+}
+.offers-box .text-bx h4{
+  font-size: 15px;
+  margin-bottom: 5px;
 }
 .offers-box .text-bx p {
   font-size: 10px;
@@ -339,6 +372,9 @@ li {
 }
 .merchant .text-bx {
   width: 50%;
+}
+.merchant .text-bx h3{
+  font-size: 30px;
 }
 .merchant .text-bx p {
   margin: 10px 0 20px;
@@ -388,6 +424,14 @@ li {
 }
 .merchant-text {
   margin-top: 20px;
+  text-align: center;
+}
+.merchant-text h4{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.merchant-text p{
+  margin-bottom: 3px;
 }
 .investments {
   padding: 50px 0 50px 80px;
@@ -403,6 +447,9 @@ li {
 .investments .head .text-bx {
   width: 500px;
 }
+.investments .head .text-bx h3{
+  font-size: 30px;
+}
 .investments .head .text-bx p {
   margin: 10px 0 20px 0;
 }
@@ -412,14 +459,25 @@ li {
   padding: 15px 20px;
 }
 .investmentsboxes {
-  display: flex;
-  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   overflow-x: hidden;
+  margin-top: 10px;
+  grid-gap: 15px;
 }
 .investmentsbox {
   background: #ffff;
   padding: 8px;
-  margin-right: 15px;
+  width: 350px;
+  height: auto;
+}
+.investmentsbox .img-bx{
+  width: 100%;
+  height: 220px;
+}
+.investmentsbox .img-bx img{
+    width: 100%;
+    height: 100%;
 }
 .investmentsbox .text-bx p {
   margin: 10px 0;
@@ -445,11 +503,11 @@ li {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .loans .text-bx h1 {
   width: 800px;
-  font-size: 40px;
+  font-size: 45px;
 }
 .loans .text-bx p {
   margin: 20px;
@@ -485,11 +543,11 @@ li {
   margin-bottom: 10px;
 }
 .icon {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background: rgb(221, 216, 216);
-  margin-right: 8px;
+  margin-right: 9px;
 }
 .shortlets {
   background: url("/public/images/shortlets.png");
@@ -508,9 +566,9 @@ li {
   left: 10%;
 }
 .shortlets .text-bx h2 {
-  font-size: 40px;
+  font-size: 45px;
   margin: 20px 0;
-  width: 400px;
+  width: 450px;
 }
 .shortlets .text-bx p {
   margin-bottom: 20px;
@@ -539,7 +597,7 @@ li {
 .shortlets-box {
   background: #ffff;
   padding: 8px;
-  width: 35%;
+  width: 33%;
   margin-right: 15px;
 }
 .shortlets-box .img-bx {
@@ -550,4 +608,84 @@ li {
 }
 .shortlets-boxes .box-text-bx {
   color: black;
+}
+.shortlets-boxes .box-text-bx p{
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+.shortlets-boxes .box-text-bx h4{
+  font-size: 20px;
+}
+.waiting-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 80px;
+  text-align: center;
+}
+.waiting-list h1{
+  font-size: 45px;
+}
+.waiting-list p{
+  width: 600px;
+  margin: 20px;
+}
+.waiting-list input{
+  width: 500px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.waiting-list button{
+  background: var(--primary-color);
+  color: #ffff;
+  padding: 15px 20px;
+  border: none;
+  margin-bottom: 10px;
+}
+.footer{
+  background: #071F2C;
+  height: 90vh;
+  position: relative;
+  color: #fff;
+  border-bottom: 100px solid #fff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 50px 80px;
+  grid-gap: 80px;
+}
+.footer h4{
+  font-size: 20px;
+}
+.col-1, .col-2, .col-4{
+  max-width: 250px;
+}
+.col-1 .img-bx{
+  margin-bottom: 20px;
+}
+.col-1 .img-bx img{
+  filter: invert(100%);
+}
+.col-2{
+  margin-left: 50px;
+}
+.col-2 .head{
+  margin-bottom: 50px;
+}
+.footer-links li{
+    margin-bottom: 20px;
+}
+.col-4 .head{
+  margin-bottom: 50px;
+}
+.col-4 .top{
+    margin-bottom: 50px;
+}
+.footer-img{
+  /* z-index: 1;  */
+  position: absolute;
+  bottom: -12%;
+  left: 0;
+  right: 0;
+  overflow-x: hidden;
 }

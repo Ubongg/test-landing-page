@@ -21,7 +21,7 @@ const Experiences = () => {
             <img src="/images/xp1.png" alt="" />
           </div>
           <div className="text-bx">
-            <h4>Ibom Golf Resort</h4>
+            <h5>Ibom Golf Resort</h5>
             <p>
               Uyo, Nigeria <span>.</span> 6k Experiences
             </p>
