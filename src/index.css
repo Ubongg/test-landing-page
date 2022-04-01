@@ -91,7 +91,7 @@ p{
   transition: var(--main-transition);
   cursor: pointer;
   font-family: 'Nunito Sans';
-  font-size: 19px;
+  font-size: 18px;
 }
 .sub-links li:hover {
   background: var(--primary-color);
@@ -753,7 +753,7 @@ font-size: 13px;
 }
 .footer{
   background: #071F2C;
-  height: 92vh;
+  height: 90vh;
   position: relative;
   color: #fff;
   border-bottom: 100px solid #fff;
@@ -814,21 +814,21 @@ font-size: 13px;
 .footer-img{
   /* z-index: 1;  */
   position: absolute;
-  bottom: -12%;
+  bottom: -13%;
   left: 0;
   right: 0;
   overflow-x: hidden;
 }
 .copyright{
     position: absolute;
-    bottom: -10%;
+    bottom: -11%;
     left: 5.8%;
     color: black;
     font-size: 12px;
 }
 .terms{
     position: absolute;
-    bottom: -10%;
+    bottom: -11%;
     right: 5.8%;
     color: black;
     font-size: 12px;
