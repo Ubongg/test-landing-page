@@ -82,7 +82,7 @@ p{
   margin-left: 20px;
   border: 1px solid black;
   padding: 6px 20px;
-  width: 100%;
+  width: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,7 +91,7 @@ p{
   transition: var(--main-transition);
   cursor: pointer;
   font-family: 'Nunito Sans';
-  font-size: 20px;
+  font-size: 19px;
 }
 .sub-links li:hover {
   background: var(--primary-color);
@@ -753,7 +753,7 @@ font-size: 13px;
 }
 .footer{
   background: #071F2C;
-  height: 90vh;
+  height: 92vh;
   position: relative;
   color: #fff;
   border-bottom: 100px solid #fff;
