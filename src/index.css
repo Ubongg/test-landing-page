@@ -814,21 +814,21 @@ font-size: 13px;
 .footer-img{
   /* z-index: 1;  */
   position: absolute;
-  bottom: -13%;
+  bottom: -14%;
   left: 0;
   right: 0;
   overflow-x: hidden;
 }
 .copyright{
     position: absolute;
-    bottom: -11%;
+    bottom: -12%;
     left: 5.8%;
     color: black;
     font-size: 12px;
 }
 .terms{
     position: absolute;
-    bottom: -11%;
+    bottom: -12%;
     right: 5.8%;
     color: black;
     font-size: 12px;
