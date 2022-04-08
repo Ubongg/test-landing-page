@@ -8,7 +8,7 @@ const SubNav = () => {
 
   return (
     <div className="sub-nav">
-      <ul className="sub-links">
+      <ul className="sub-links big">
         <li>experiences</li>
         <li>vacation</li>
         <li>short lists</li>
@@ -19,6 +19,13 @@ const SubNav = () => {
           <span>{dropDown ? <FaAngleUp /> : <FaAngleDown />}</span>
         </li>
         {dropDown && <DropDown />}
+      </ul>
+      <ul className="sub-links small">
+        <li>experiences</li>
+        <li>vacation</li>
+        <li>short lists</li>
+        <li>real estates</li>
+        <li>spa</li>
       </ul>
     </div>
   );

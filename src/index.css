@@ -78,6 +78,9 @@ p{
   margin: 30px 60px;
   position: relative;
 }
+.sub-links.small{
+  display: none;
+}
 .sub-links li {
   margin-left: 20px;
   border: 1px solid black;
@@ -762,6 +765,9 @@ font-size: 13px;
   padding: 50px 80px;
   grid-gap: 80px;
   font-family: 'Nunito Sans';
+}
+.footer.small{
+  display: none;
 }
 .footer h4{
   font-size: 16px;
