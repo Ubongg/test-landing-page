@@ -1,0 +1,44 @@
+@media screen and (max-width: 960px) {
+ body{
+  overflow-x: hidden;
+ }
+ .logo {
+  margin-left: 10px;
+ }
+ .show-menu {
+  display: flex;
+    z-index: 1;
+    cursor: pointer;
+    font-size: 25px;
+ }
+ .links {
+  flex-direction: column;
+    transform: translateX(0);
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    transition: var(--main-transition);
+    z-index: 1;
+    padding: 30px 200px 80px 30px;
+    box-shadow: -4px 4px 3px 1px rgba(173, 172, 172, 0.3);
+ }
+ .links.none{
+  transform: translateX(120%);
+ }
+ .links li {
+  margin: 10px 0;
+  font-size: 20px;
+ }
+ .links .sign{
+  flex-direction: column;
+  margin-left: 0;
+ } 
+ .started {
+  background: none;
+  color: var(--primary-color);
+  padding: 0;
+  margin-top: 0;
+ }
+}

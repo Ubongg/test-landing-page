@@ -3,13 +3,13 @@ import { FaBars } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
-  const [showLinks, setShowLinks] = useState(false);
+  const [showLinks, setShowLinks] = useState(true);
   return (
     <div className="nav">
       <div className="logo">
         <img src="/images/logo.png" alt="" />
       </div>
-      <ul className="links">
+      <ul className={showLinks ? "links" : "links none"}>
         <li>vacations</li>
         <li>loans</li>
         <li>services</li>
